@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel tests" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.nashtech.utils.report.CustomReport" />
+		<listener class-name="com.nashtech.utils.report.SuiteListener" />
+	</listeners>
+	<test name="test 1">
+		<classes>
+			<class name="test.testcases.login.LoginSuccessTest" />
+		</classes>
+	</test>
+	<test name="test 2">
+		<classes>
+			<class name="test.testcases.login.LoginUnsuccessTest" />
+		</classes>
+	</test>
+</suite>
